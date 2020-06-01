@@ -1,0 +1,6 @@
+CREATE TABLE public.CLIENTES (
+                DNI INTEGER NOT NULL,
+                Apellido CHAR(30) NOT NULL,
+                Ciudad CHAR(30) NOT NULL,
+                CONSTRAINT dni PRIMARY KEY (DNI)
+);
