@@ -1,0 +1,7 @@
+create function insertarclientes(int, char(30), char(30)) returns void as
+$$									   
+insert into Clientes (DNI, Apellido, Ciudad) values ($1, $2, $3)
+$$
+language sql									   									   
+
+select insertarclientes(32456732, 'Perez', 'Posadas')
