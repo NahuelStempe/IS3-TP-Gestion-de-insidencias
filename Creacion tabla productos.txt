@@ -2,7 +2,7 @@ Create table Productos (
 	Codigo int,
 	Nombre_producto char(30),
 	Precio double,
-	Seccion chaar(30),
+	Seccion char(30),
 	Origen char(30),
 	primary key(Codigo)
 );

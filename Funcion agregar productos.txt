@@ -1,0 +1,8 @@
+create function insertarProducto(int, char(30), double, char(30), char(30)) returns void as
+$$									   
+insert into Empleados (Codigo, Nombre_producto, Precio, Seccion, Origen) 
+			values ($1, $2, $3, $4, $5, $6, $7)
+$$
+language sql									   									   
+
+select insertarempleados(1, 'Camiseta', $1500, 'Deportes', 3, 'Argentina');
